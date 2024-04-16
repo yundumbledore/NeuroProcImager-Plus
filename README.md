@@ -18,5 +18,3 @@ The example data consists of 4714 MEG-derived source timeseries in the cerebral 
 
 ### Calculating cortical stability
 
-### Sensitivity analyses
-
