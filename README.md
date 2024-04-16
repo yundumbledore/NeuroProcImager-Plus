@@ -12,7 +12,11 @@ The example data consists of 4714 MEG-derived source timeseries in the cerebral 
 
 ### Estimating model parameters
 
-### Identifying brain hubs based on inter-regional connectivity
+### Identifying critical hubs based on inter-regional connectivity
 
-### Identifying 
+### Identifying critical brain regions based on regional variables
+
+### Calculating cortical stability
+
+### Sensitivity analyses
 
