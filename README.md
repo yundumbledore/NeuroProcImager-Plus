@@ -1,5 +1,10 @@
-# NeuroProcImager+
+# NeuroProcImager-Plus
 #### Yun Zhao, Levin Kuhlmann (Monash University, Australia), Email: yun.zhao@monash.edu, levin.kuhlmann@monash.edu
+
+**NeuroProcImager-Plus** is associated with the manuscript *Cortical local dynamics, connectivity and stability correlates of global consciousness states*. 
+
+**NeuroProcImager-Plus**, an extension of **NeuroProcImager** (Github link, paper link), provides neurophysiological interpretations of brain functions regarding effective connectivity between brain regions, regional neurophysiological variables, and dynamic cortical stability analysis.
+
 
 ## Methods
 
