@@ -17,7 +17,9 @@ clc
 %
 % To run this Case, one needs to download
 % regional_variable_estimates_S11.mat from the Google Drive
-% (https://drive.google.com/drive/folders/1i8ZqNcqIbl0AMgG1JY3nuSUMqaBCREqD?usp=sharing).
+% (https://drive.google.com/drive/folders/1i8ZqNcqIbl0AMgG1JY3nuSUMqaBCREqD?usp=sharing) 
+% and put it in the /Data folder.
+%
 % The time-evolving neurophysiological variables in each region were 
 % estimated using NeuroProcImager by fitting a neural mass model to each 
 % MEG source time series. 
@@ -27,8 +29,8 @@ clc
 % time-evolving eigenvalue spectrum and the number of positive
 % eigenvalues.
 %
-% Due to high sampling rate of 150 Hz of the time series, this showcase
-% runs overnight.
+% This showcase runs overnight due to a high sampling rate of 150 Hz of the
+% time series.
 %
 % Run time highly depends on the hardware of the CPU workstation.
 % -------------------------------------------------------------------------

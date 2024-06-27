@@ -24,7 +24,7 @@ end
 window_length = window_size_inSeconds*save_fs;
 
 %% Load everything before run
-load('./Data/regional_variable_estimates_S11.mat'], 'xi_hat_list') % load regional variable estimates
+load('regional_variable_estimates_S11.mat'], 'xi_hat_list') % load regional variable estimates
 xi_hat_list(isnan(xi_hat_list))=0; % replace nan with 0
 
 n_channels = size(xi_hat_list,3);
