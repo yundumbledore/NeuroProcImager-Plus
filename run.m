@@ -16,7 +16,7 @@ clc
 % finally recovered from unconsciousness.
 %
 % To run this Case, one needs to download
-% regional_variable_estimates_S1.mat from the Google Drive
+% regional_variable_estimates_S11.mat from the Google Drive
 % (https://drive.google.com/drive/folders/1i8ZqNcqIbl0AMgG1JY3nuSUMqaBCREqD?usp=sharing).
 % The time-evolving neurophysiological variables in each region were 
 % estimated using NeuroProcImager by fitting a neural mass model to each 
