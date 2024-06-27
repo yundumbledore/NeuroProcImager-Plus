@@ -24,7 +24,7 @@ end
 window_length = window_size_inSeconds*save_fs;
 
 %% Load everything before run
-load('./Data/regional_variable_estimates_S11.mat'], 'xi_hat_list') % load regional variable estimates
+load('./Data/regional_variable_estimates_S11.mat', 'xi_hat_list') % load regional variable estimates
 xi_hat_list(isnan(xi_hat_list))=0; % replace nan with 0
 
 n_channels = size(xi_hat_list,3);
@@ -47,13 +47,12 @@ alpha_pe = fs*squeeze(xi_hat_list(12,:,:))';
 alpha_ep = fs*squeeze(xi_hat_list(13,:,:))';
 clear xi_hat_list
 
-%% Calculate connection matrix A (mu = A*g(vp))
+%% Calculate connection matrix W (mu = W*g(vp))
 windows_num = floor(n_timesteps/window_length)-1;
 
 kernel = arrayfun(@h,0:1/save_fs:window_size_inSeconds); % discretized kernel
 
 W_sequence = zeros(n_channels, n_channels, windows_num);
-poolobj = parpool(ntasks);
 parfor (i = 1:windows_num, ntasks)
     mu = input(:,(i-1)*window_length+1:i*window_length)*scale;
     vp = v_pyr(:,(i-1)*window_length+1:i*window_length);
@@ -66,7 +65,6 @@ parfor (i = 1:windows_num, ntasks)
     
     W_sequence(:,:,i) = analytic_multiregress(gvp', mu');
 end
-delete(poolobj)
 
 %% Find equilibrium point of the system
 H = [1; 0; 0; 0; 0; 0; 1; 0; 1; 0];
