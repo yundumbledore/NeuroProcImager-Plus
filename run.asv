@@ -18,17 +18,12 @@ clc
 % To run this Case, one needs to download
 % regional_variable_estimates_S1.mat from the Google Drive
 % (https://drive.google.com/drive/folders/1i8ZqNcqIbl0AMgG1JY3nuSUMqaBCREqD?usp=sharing).
-% The time-evolving neurophysiological variables in each region were 
-% estimated using NeuroProcImager by fitting a neural mass model to each 
-% MEG source time series. 
+% The regional variables were estimated using NeuroProcImager by fitting a
+% neural mass model to each MEG source time series. 
 % 
-% This case further estimates the inter-regional connectivity parameters,
-% calculates the Jacobi matrices of the whole-cortex system, and shows the
-% time-evolving eigenvalue spectrum and the number of positive
-% eigenvalues.
+% This case further estimates the inter-regional connectivity parameters
 %
-% Due to high sampling rate of 150 Hz of the time series, this showcase
-% runs for around 12.5 hours.
+% Case finished in around 12.5 hours.
 %
 % Run time highly depends on the hardware of the machine.
 % -------------------------------------------------------------------------
