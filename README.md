@@ -13,7 +13,7 @@
 ### Dataset
 
 ## Demonstration with example data
-The example data consists of 4714 MEG-derived source timeseries in the cerebral cortex from subject 11 and is available to download at.
+The example data consists of 4714 MEG-derived source timeseries in the cerebral cortex from subject 11.
 
 ### Estimating model parameters
 
