@@ -28,9 +28,9 @@ clc
 % eigenvalues.
 %
 % Due to high sampling rate of 150 Hz of the time series, this showcase
-% runs for around 12.5 hours.
+% runs overnight.
 %
-% Run time highly depends on the hardware of the machine.
+% Run time highly depends on the hardware of the CPU workstation.
 % -------------------------------------------------------------------------
 %
 %% Add source to MATLAB path
