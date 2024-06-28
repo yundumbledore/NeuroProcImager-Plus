@@ -40,7 +40,9 @@ Note that each panel in the figure shows the averaged variable estimates across 
 The figure below shows two snapshots of estimated connectivity between brain regions, one taken at the beginning of the experiment when the subject was conscious, and the other taken when the subject was unresponsive.
 ![](Assets/inter-regional_connectivity_estimates.png)
 
-
+The figure below shows the **dynamic cortical stability analysis under xenon-induced asymptotic loss of consciousness**.
+![](Assets/dynamic_stability.png)
+The bottom panel shows the time course of the eigenvalue spectrum, and the top panel shows the time course of the number of positive eigenvalues, the subject's response level, and the xenon concentration level. Throughout the experiment, the number and magnitude of positive eigenvalues ​​first decreased and then increased, corresponding to the increase and then decrease of xenon concentration. The subjects responded at the beginning of the experiment where the positive eigenvalues ​​were the largest.
 
 ## Adaptation to your data
 Users can prepare EEG or MEG data of the whole brain or parts of the brain in any brain state or during state transitions, and use our [NeuroProcImager](https://github.com/yundumbledore/NeuroProcImager/tree/main) to estimate the regional neurophysiological variables of each brain region (that is, the region corresponding to each MEG or EEG time series). Assuming there are $N$ regions (i.e., N time series) of length $t$, and each region has $n$ neurophysiological variables, the user needs to save the estimated values ​​in the format of $n$ x $t$ x $N$ and name it "xi_hat_list".
