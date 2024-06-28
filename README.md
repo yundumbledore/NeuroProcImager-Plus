@@ -37,5 +37,10 @@ The regional variable estimates in the file "regional_variable_estimates_S11.mat
 ![](Assets/regional_variables_estimates.png)
 Note that each panel in the figure shows the averaged variable estimates across **4714 cerebral cortical regions** in blue line with 95% confidence interval in green band. The level of responsiveness is denoted by solid brown line and the xenon concentration level during the experiment is denoted by brown dashed line. The responsiveness level was measured by an auditory continuous performance task. Subjects were asked to respond as quickly as possible using two separate button boxes held in each hand. Use the left and right buttons on each box correspond to a low or high frequency tone, respectively, and the left and right button boxes, respectively, for the participant to indicate the absence or presence of nausea. When they were unable to answer or answered incorrectly, the responsiveness was 0%, indicating unconsciousness, and when they were able to answer correctly, the responsiveness was 100%, indicating a conscious state.
 
+The figure below shows two snapshots of estimated connectivity between brain regions, one taken at the beginning of the experiment when the subject was conscious, and the other taken when the subject was unresponsive.
+![](Assets/inter-regional_connectivity_estimates.png)
+
+
+
 ## Adaptation to your data
 Users can prepare EEG or MEG data of the whole brain or parts of the brain in any brain state or during state transitions, and use our [NeuroProcImager](https://github.com/yundumbledore/NeuroProcImager/tree/main) to estimate the regional neurophysiological variables of each brain region (that is, the region corresponding to each MEG or EEG time series). Assuming there are $N$ regions (i.e., N time series) of length $t$, and each region has $n$ neurophysiological variables, the user needs to save the estimated values ​​in the format of $n$ x $t$ x $N$ and name it "xi_hat_list".
