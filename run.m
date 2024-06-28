@@ -43,7 +43,8 @@ tasks = ["cortical stability"];
 
 %% Run
 try
-    main(tasks)
+    file_name = 'regional_variable_estimates_S11.mat';
+    main(tasks, file_name)
 catch ME
     disp(ME)
 end
