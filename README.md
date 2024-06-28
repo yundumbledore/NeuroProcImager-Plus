@@ -19,7 +19,7 @@ Coupling of two cortical regions is achieved by connecting the output of the pyr
 ### Parameter estimation
 To estimate parameters of the whole-cortex model from data, we first treat each NMM in the whole-cortex model independent and apply the semi-analytical Kalman filter (AKF) that we developed in [Neuroimage Paper link](https://www.sciencedirect.com/science/article/pii/S1053811922007078) to estimate parameters of each NMM. The AKF is an unbiased estimator, providing the minimum mean square error estimates for model parameters, under the assumption that the underlying probability distribution of the model state is Gaussian. Briefly, the aim of the estimation is to calculate the posterior distribution of model parameters at time point $t$ given measurements up to $t$. This gives time-varying parameter estimates.
 
-To estimate inter-regional connectition strength $w$, we use the multivariate regression model to relate the input of the pyramidal population $mu$ in one region to the output of the pyramidal population in other regions. The bias 
+To estimate inter-regional connectition strength $w$, we use the multivariate regression model to relate the input of the pyramidal population $\mu$ in one region to the output of the pyramidal population in other regions. The multivariate regression gives an estimate for $w$ and a bias term representing the contribution from thalamus input.
 
 ## Demonstration
 Here we provide a demonstration to enable reviewers and readers to get in touch with NeuroProcImager-Plus.
