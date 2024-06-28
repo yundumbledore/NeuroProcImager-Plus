@@ -13,7 +13,7 @@ save_fs = 150; % sampling rate estimates were saved
 %% Define RUN Settings
 window_size_inSeconds = 1;
 
-ntasks = feature('numcores'); % num of CPUs
+ntasks = feature('numcores'); % reduce it if encounter parallel processing errors
 poolobj = parpool(ntasks); % start parellel computing
 
 output_dir = './Output/';
