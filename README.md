@@ -16,7 +16,8 @@ Briefly, the NMM comprises three neural populations, namely excitatory (e), inhi
 
 Coupling of two cortical regions is achieved by connecting the output of the pyramidal population in one region to the input of the pyramidal population in another region via a synapse. For the whole-cortex model, the input to the pyramidal population in one cortical region is formed by the combination of post-synaptic membrane potentials induced by the output of each area. The synaptic connection strength between two cortical regions is referred as the inter-regional connectivity parameters.
 
-The firing rates from all cortical regions form input to the pyramidal cells and induce post-synaptic potentials via a convolution kernel as described by Eq \eqref{eq: convolution}. Note that a connectivity parameter $w_{ba}$ describes the inter-regional connectivity strength between regions rather than between local neuronal populations. 
+### Parameter estimation
+To estimate parameters of the whole-cortex model from data, we first treat each NMM in the whole-cortex model independent and apply the semi-analytical Kalman filter (AKF) that we developed in [Neuroimage Paper link](https://www.sciencedirect.com/science/article/pii/S1053811922007078) to estimate parameters of each NMM. The AKF is an unbiased estimator, providing the minimum mean square error estimates for model parameters, under the assumption that the underlying probability distribution of the model state is Gaussian. Briefly, the aim of the estimation is to calculate the posterior distribution of model parameters at time point $t$ given measurements up to $t$.
 
 ## Demonstration
 Here we provide a demonstration to enable reviewers and readers to get in touch with NeuroProcImager-Plus.
@@ -30,4 +31,4 @@ To run this Case, one needs to download "regional_variable_estimates_S11.mat" fr
 This demonstration will run overnight because the recording is half an hour long and the sampling rate is 150Hz. Run time highly depends on the hardware of the CPU workstation.
 
 ## Adaptation to your data
-Users can prepare EEG or MEG data of the whole brain or part of the brain area, and use our [NeuroProcImager](https://github.com/yundumbledore/NeuroProcImager/tree/main) to estimate the regional neurophysiological variables of each brain region (that is, the region corresponding to each MEG or EEG time series). Assuming there are N regions (i.e., N time series) of length t, and each region has n neurophysiological variables, the user needs to save the estimated values ​​in the format of n x t x N and name it "xi_hat_list".
+Users can prepare EEG or MEG data of the whole brain or part of the brain area, and use our [NeuroProcImager](https://github.com/yundumbledore/NeuroProcImager/tree/main) to estimate the regional neurophysiological variables of each brain region (that is, the region corresponding to each MEG or EEG time series). Assuming there are $N$ regions (i.e., N time series) of length $t$, and each region has $n$ neurophysiological variables, the user needs to save the estimated values ​​in the format of $n \times t \times N$ and name it "xi_hat_list".
