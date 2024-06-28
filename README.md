@@ -27,9 +27,7 @@ Stability analysis is performed in each time window where the averaged parameter
 To visualize the result, we show the time course of the eigenvalue spectrum and indicate the number of unstable eigenvalues at each time point. Each unstable eigenvalue represents a distinct direction in which the system's state can diverge from the equilibrium point. The more unstable eigenvalues there are, the more directions the system has in which it can become unstable. The magnitude (specifically, the real part) of an unstable eigenvalue indicates how rapidly perturbations in that direction will grow. Systems with larger unstable eigenvalues may be more sensitive to initial conditions and external disturbances.
 
 ## Demonstration
-Here we provide a demonstration to enable reviewers and readers to get in touch with NeuroProcImager-Plus.
-
-**Showcase: Dynamic cortical stability analysis under xenon-induced asymptotic loss of consciousness**
+Here we provide a demonstration to show the **dynamic cortical stability analysis under xenon-induced asymptotic loss of consciousness**.
 
 This showcase calculates and shows the time-evolving stability of the cerebral cortex during an xenon-induced anaesthesia experiment where a subject started with wakeful state and slowly lost responsiveness and finally recovered from unconsciousness.
 
@@ -38,4 +36,4 @@ To run this Case, one needs to download "regional_variable_estimates_S11.mat" fr
 This demonstration will run overnight with a standard CPU workstation. Run time highly depends on the number of the CPU cores and the size of memory.
 
 ## Adaptation to your data
-Users can prepare EEG or MEG data of the whole brain or part of the brain area, and use our [NeuroProcImager](https://github.com/yundumbledore/NeuroProcImager/tree/main) to estimate the regional neurophysiological variables of each brain region (that is, the region corresponding to each MEG or EEG time series). Assuming there are $N$ regions (i.e., N time series) of length $t$, and each region has $n$ neurophysiological variables, the user needs to save the estimated values ​​in the format of $n$ x $t$ x $N$ and name it "xi_hat_list".
+Users can prepare EEG or MEG data of the whole brain or parts of the brain in any brain state or during state transitions, and use our [NeuroProcImager](https://github.com/yundumbledore/NeuroProcImager/tree/main) to estimate the regional neurophysiological variables of each brain region (that is, the region corresponding to each MEG or EEG time series). Assuming there are $N$ regions (i.e., N time series) of length $t$, and each region has $n$ neurophysiological variables, the user needs to save the estimated values ​​in the format of $n$ x $t$ x $N$ and name it "xi_hat_list".
