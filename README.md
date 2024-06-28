@@ -52,4 +52,4 @@ Users can prepare EEG or MEG data of the whole brain or parts of the brain in an
 
 ## Common issues and solutions
 Issue: *Errors with parallel pool*.
-Solution: As the parallel computation heavily relies on the hardward of computers, it is suggested to reduce the number of parallel threads by 
+Solution: As the parallel computation heavily relies on the hardward of computers, it is suggested to reduce the number of parallel threads by defining the number of threads you want to run in parallel in line #16 in /Sources/calculate_dynamic_stability.m.
