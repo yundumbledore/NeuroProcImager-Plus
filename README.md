@@ -19,16 +19,7 @@ Coupling of two cortical regions is achieved by connecting the output of the pyr
 ### Parameter estimation
 To estimate parameters of the whole-cortex model from data, we first treat each NMM in the whole-cortex model independent and apply the semi-analytical Kalman filter (AKF) that we developed in [Neuroimage Paper link](https://www.sciencedirect.com/science/article/pii/S1053811922007078) to estimate parameters of each NMM. The AKF is an unbiased estimator, providing the minimum mean square error estimates for model parameters, under the assumption that the underlying probability distribution of the model state is Gaussian. Briefly, the aim of the estimation is to calculate the posterior distribution of model parameters at time point $t$ given measurements up to $t$. This gives time-varying parameter estimates.
 
-The inter-regional connectition strength
-
-The multivariate regression model relates the input of the pyramidal population $mu$ to the output of . Let $\mathbf{Z}$ be an $n\times N$ matrix where each column is a $\mu$ estimates time series (corresponding to $\mu$ estimates in each NMM), $\mathbf{F}$ be an $n\times N$ matrix where each column is a time series of the convolution of the post-synaptic kernel with $v_p$ estimates. Let $\mathbf{W}$ be an $N\times N$ matrix of coefficients $w_{ba}$, and $\mathbf{E}$ be an $n\times N$ Gaussian white noise. The multivariate regression model is defined by
-\begin{equation}
-    \mathbf{Z}=\mathbf{F}\mathbf{W}+\mathbf{E}
-\end{equation}
-where the maximum likelihood estimation and unbiased estimator for $\mathbf{W}$ is given as
-$
-    \hat{\mathbf{W}}=(\mathbf{F}^\top \mathbf{F})^{-1} \mathbf{F}^\top \mathbf{Z}.
-$
+To estimate inter-regional connectition strength $w$, we use the multivariate regression model to relate the input of the pyramidal population $mu$ in one region to the output of the pyramidal population in other regions. The bias 
 
 ## Demonstration
 Here we provide a demonstration to enable reviewers and readers to get in touch with NeuroProcImager-Plus.
