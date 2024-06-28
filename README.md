@@ -10,7 +10,7 @@
 
 ### Whole-cortex model
 ![text](Assets/whole_cortex_model.png)
-The schematic of the whole-cortex model fitted to source-level MEG data is shown. The left side shows a neural mass model (NMM, refers to [Neuroimage Paper link](https://www.sciencedirect.com/science/article/pii/S1053811922007078)) and the middle shows the whole-cortex model. Each node in the whole-cortex model is a NMM. Purple lines represent connections between NMMs. The right side shows MEG sensors and reconstructed source points in the cerebral cortex. Each source time series is fitted with a NMM.
+The schematic of the whole-cortex model fitted to source-level MEG data is shown. The left side shows a neural mass model (NMM) and the middle shows the whole-cortex model. Each node in the whole-cortex model is a NMM. Purple lines represent connections between NMMs. The right side shows MEG sensors and reconstructed source points in the cerebral cortex. Each source time series is fitted with a NMM.
 
 ## Demonstration
 Here we provide a demonstration to enable reviewers and readers to get in touch with NeuroProcImager-Plus.
