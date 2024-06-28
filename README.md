@@ -9,7 +9,7 @@
 ## Methods
 
 ### Whole-cortex model
-![](Assets/whole-cortex model.png)
+![text](Assets/whole-cortex model.png)
 
 ## Demonstration
 Here we provide a demonstration to enable reviewers and readers to get in touch with NeuroProcImager-Plus.
