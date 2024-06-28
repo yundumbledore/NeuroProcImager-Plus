@@ -6,7 +6,7 @@
 **NeuroProcImager-Plus**, an extension of **NeuroProcImager** ([Github link](https://github.com/yundumbledore/NeuroProcImager/tree/main), [Neuroimage Paper link](https://www.sciencedirect.com/science/article/pii/S1053811922007078)), explores neurophysiological underpinnings of brain functions via analyzing
 1. regional neurophysiological variables
 2. effective connectivity between brain regions,
-3. *dynamic cortical stability*.
+3. *dynamic cortical stability* (demo below).
 
 
 ## Methods
