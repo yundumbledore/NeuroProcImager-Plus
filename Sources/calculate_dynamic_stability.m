@@ -1,4 +1,5 @@
 function calculate_dynamic_stability(file_name)
+warning('off')
 %% Define model parameters
 v0 = 6;
 varsigma = 3.0339;
