@@ -74,7 +74,7 @@ for iCh = 1:n_channels
     H_matrix((iCh-1)*10+1:(iCh-1)*10+10, iCh) = H;
 end
 
-options = optimoptions('fsolve','MaxIterations',1e5,'MaxFunctionEvaluations',1e6,'UseParallel',false, 'FunctionTolerance',1e-5,'OptimalityTolerance',1e-6); % define fsolve settings before run
+options = optimoptions('fsolve','MaxIterations',1e4,'MaxFunctionEvaluations',1e4,'UseParallel',false, 'FunctionTolerance',1e-5,'OptimalityTolerance',1e-5); % define fsolve settings before run
 
 fixpoint = nan(n_channels*10, windows_num);
 parfor (i = 1:windows_num, ntasks)
